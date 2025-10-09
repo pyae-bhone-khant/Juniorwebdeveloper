@@ -1,5 +1,4 @@
-import channels from "../Data/channel"
-import ChannelCard from "../components/ChannelCard"
+
 
 export default function Home() {
   return (
@@ -11,11 +10,7 @@ export default function Home() {
         YouTube သင်ခန်းစာများ၊ Project Ideas များ စုစည်းပေးထားတဲ့နေရာပါ။
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {channels.map((ch) => (
-          <ChannelCard key={ch.name} {...ch} />
-        ))}
-      </div>
+      
     </div>
   )
 }
