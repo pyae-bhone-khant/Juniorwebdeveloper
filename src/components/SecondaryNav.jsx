@@ -5,41 +5,42 @@ import '../styles/SecondaryNav.css'
 export default function SecondaryNav() {
   return (
     <nav className='secondary-nav'>
-        <ul>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-            <li><Link to='javascript'>Javascript</Link></li>
-            <li><Link to='php'>PHP</Link></li>
-
+      <div className="secondary-nav-container">
+       <ul>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
+            <li className= "nav-links"><Link to='javascript'>Javascript</Link></li>
+            <li className= "nav-links"><Link to='php'>PHP</Link></li>
         </ul>
+      </div>
     </nav>
   )
 }

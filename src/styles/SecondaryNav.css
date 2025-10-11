@@ -1,15 +1,32 @@
 .secondary-nav {
-    background-color: whitesmoke;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    height: 50px;
+    padding: 10px 0;
+    height: 60px;
+    padding: 34px 0;
     display: flex;
     align-items: center;
 }
 
-li {
+.secondary-nav-container {
+    height: inherit;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
     padding: 10px 20px;
     margin: 0 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1)
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.nav-links:hover {
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }

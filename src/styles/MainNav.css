@@ -29,3 +29,7 @@ ul {
     margin-left: 15px;
     border: none;
 }
+
+.nav-items:hover {
+    box-shadow: none;
+}
