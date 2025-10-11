@@ -1,0 +1,20 @@
+#hero-section {
+    width: 100%;
+    background-color: white;
+}
+
+.hero-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
