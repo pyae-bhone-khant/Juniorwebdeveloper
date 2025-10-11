@@ -8,9 +8,7 @@ export default function Home() {
       </h1>
       <p className="text-center text-slate-600 mb-8">
         YouTube သင်ခန်းစာများ၊ Project Ideas များ စုစည်းပေးထားတဲ့နေရာပါ။
-      </p>
-
-      
+      </p>      
     </div>
   )
 }
