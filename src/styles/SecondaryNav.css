@@ -1,0 +1,15 @@
+.secondary-nav {
+    background-color: whitesmoke;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding: 10px 20px;
+    margin: 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
