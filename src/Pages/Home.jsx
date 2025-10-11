@@ -1,27 +1,22 @@
-import '../styles/Home.css'
-
+import header from '/header.avif'
+import LanguageCard from '../components/LanguageCard';
 export default function Home() {
-  return (
-<<<<<<< HEAD
-    <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">
-        💻 Junior Developer လမ်းညွှန် Website
-      </h1>
-      <p className="text-center text-slate-600 mb-8">
-        YouTube သင်ခန်းစာများ၊ Project Ideas များ စုစည်းပေးထားတဲ့နေရာပါ။
-      </p>      
+  return ( 
+     <div> 
+    <div  className='flex  justify-between w-full h-120 mb-0  bg-blue-950' >
+   <div className='text-white flex flex-col px-20  mt-35 ' >
+    <h1 className='text-4xl font-bold' >Become a full stack Developer</h1>
+    <p className='mt-8 text-xl' >Learn web development step-by-step with our free YouTube course and complete guidebook. Perfect for beginners who want to start coding confidently.</p>
+    <div className='mt-10 flex  gap-4' >
+      <button className='border border-blue-900 px-2 py-2 hover:opacity-80 rounded bg-white text-blue-900 font-bold  text-xl'>🎥 Watch Course</button>
+      <button className='border border-white px-2 hover:opacity-80 py-2 rounded text-white font-bold text-xl'>📘 Read the Book</button>
     </div>
-=======
-    <section id="hero-section">
-      <div className="hero-container">
-        <h1 className='hero-header'>
-          💻 Junior Developer လမ်းညွှန် Website
-        </h1>
-        <p className='hero-paragraph'>
-          YouTube သင်ခန်းစာများ၊ Project Ideas များ စုစည်းပေးထားတဲ့နေရာပါ။
-        </p>
-      </div>
-    </section>
->>>>>>> c6bc6590ab56c1be538488417d51c67c382c5710
-  )
+   </div> 
+    <div>
+      <img src={header} className='w-300 h-full' alt="" />
+    </div>
+    </div> 
+    <LanguageCard />
+     </div>
+  );
 }
