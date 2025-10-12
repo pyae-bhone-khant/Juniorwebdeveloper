@@ -7,6 +7,8 @@ import PHP from './Pages/PHP'
 import Missing from './Pages/Missing'
 import { Routes, Route } from 'react-router-dom' 
 import LanguageCard from './components/LanguageCard'
+import Footer from './components/Footer'
+
  export default function App() {
   return (
     <div className="min-h-screen bg-slate-50" >
@@ -20,6 +22,7 @@ import LanguageCard from './components/LanguageCard'
         <Route path='/php' element= {<PHP />} />
         <Route path='*' element= {<Missing />} />
       </Routes>
+      <Footer />
     </div>
   )
  }

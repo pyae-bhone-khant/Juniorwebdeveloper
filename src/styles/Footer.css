@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+footer {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-para {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-para h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+.footer-para button {
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(111, 111, 255);
+    color: rgb(111, 111, 255);
+    transition: .4s;
+}
+
+.footer-para button:hover {
+    color: white;
+    background-color:rgb(111, 111, 255);
+}
+
+footer img {
+    width: 290px;
+    margin: 25px 0;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h6 {
+    font-size: 13px;
+}
+
+footer li {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+footer li:hover {
+    opacity: .6;
+}
+
+footer .copyright {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: "Space Mono", monospace;
+}
