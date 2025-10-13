@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Link } from "react-router";
 
 const Language = [
-  { id: 1, img: "html.svg", title: "HTML", path: "/html" },
+  { id: 1, img: "HTML.png", title: "HTML", path: "/html" },
   { id: 2, img: "css.svg", title: "CSS", path: "/css" },
-  { id: 3, img: "javascript.svg", title: "JavaScript", path: "/javascript" },
-  { id: 4, img: "react.svg", title: "React", path: "/react" },
+  { id: 3, img: "js.svg", title: "JavaScript", path: "/javascript" },
+  { id: 4, img: "React5.png", title: "React", path: "/react" },
   { id: 5, img: "nextjs.svg", title: "Next.js", path: "/nextjs" },
   { id: 6, img: "nodejs.svg", title: "Node.js", path: "/nodejs" },
   { id: 7, img: "laravel.svg", title: "Laravel", path: "/laravel" },
