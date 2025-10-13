@@ -11,7 +11,7 @@ export default function ContactSection() {
       {/* Social Links */}
       <div className="flex justify-center gap-6 mb-8 flex-wrap">
         <a
-          href="https://t.me/YourTelegramUsername"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-xl transition"
@@ -21,7 +21,7 @@ export default function ContactSection() {
         </a>
 
         <a
-          href="https://www.youtube.com/@YourChannel"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-red-600 hover:bg-red-700 px-5 py-3 rounded-xl transition"
@@ -31,7 +31,7 @@ export default function ContactSection() {
         </a>
 
         <a
-          href="https://facebook.com/YourPage"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 px-5 py-3 rounded-xl transition"
@@ -41,7 +41,7 @@ export default function ContactSection() {
         </a>
 
         <a
-          href="https://www.tiktok.com/@YourTikTokName"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-black hover:bg-gray-900 px-5 py-3 rounded-xl transition"
