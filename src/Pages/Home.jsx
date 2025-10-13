@@ -1,5 +1,8 @@
 import header from '/header.avif'
 import LanguageCard from '../components/LanguageCard';
+import Learning from '../components/Learning';
+import Faq from '../components/Faq';
+import ContactSection from '../components/Cta';
 export default function Home() {
   return ( 
      <div> 
@@ -17,6 +20,10 @@ export default function Home() {
     </div>
     </div> 
     <LanguageCard />
+    <Learning />
+    <Faq />
+    <ContactSection />
+    
      </div>
   );
 }

@@ -36,7 +36,8 @@ export default function LanguageCard() {
           <h2 className="text-blue-900 text-sm md:text-2xl lg:text-4xl font-bold hover:underline decoration-2 decoration-blue-700">
             20 YouTube Channels and 10 Books
           </h2>
-        </div>
+        </div> 
+         
         <div className="text-center pt-16">
           <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
             Learn everything you need to know
@@ -44,7 +45,7 @@ export default function LanguageCard() {
           <p className="text-gray-600 mt-3 text-sm md:text-base">
             Build your roadmap — from HTML to full-stack mastery.
           </p>
-        </div>
+        </div> 
       </div>
 
       {/* Main Container */}
