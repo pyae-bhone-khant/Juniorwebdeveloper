@@ -1,14 +1,17 @@
-"use client";
+
 import { useState } from "react";
 import { Link } from "react-router";
 
 const Language = [
-  { id: 1, img: "javascript.svg", title: "HTML" , ptah : '/javascript' },
-  { id: 2, img: "javascript.svg", title: "CSS" , ptah : '/javascript' },
-  { id: 3, img: "javascript.svg", title: "Javascript" , ptah : '/javascript' },
-  { id: 4, img: "javascript.svg", title: "React"  , ptah : '/javascript' },
-  { id: 5, img: "javascript.svg", title: "Next.js" , ptah : '/javascript' },
-  { id: 6, img: "javascript.svg", title: "Node.js" , ptah : '/javascript' },
+  { id: 1, img: "html.svg", title: "HTML", path: "/html" },
+  { id: 2, img: "css.svg", title: "CSS", path: "/css" },
+  { id: 3, img: "javascript.svg", title: "JavaScript", path: "/javascript" },
+  { id: 4, img: "react.svg", title: "React", path: "/react" },
+  { id: 5, img: "nextjs.svg", title: "Next.js", path: "/nextjs" },
+  { id: 6, img: "nodejs.svg", title: "Node.js", path: "/nodejs" },
+  { id: 7, img: "laravel.svg", title: "Laravel", path: "/laravel" },
+  { id: 8, img: "php.svg", title: "PHP", path: "/php" },
+  { id: 9, img: "vue.svg", title: "Vue", path: "/vue" },
 ];
 
 export default function LanguageCard() {
@@ -34,20 +37,21 @@ export default function LanguageCard() {
             20 YouTube Channels and 10 Books
           </h2>
         </div>
-        <div className="flex justify-center mt-10 pt-6 md:pt-2 mb-4">
-          <h1 className="text-blue-800 text-sm md:text-2xl lg:text-4xl font-bold">
+        <div className="text-center pt-16">
+          <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
             Learn everything you need to know
           </h1>
+          <p className="text-gray-600 mt-3 text-sm md:text-base">
+            Build your roadmap — from HTML to full-stack mastery.
+          </p>
         </div>
       </div>
 
       {/* Main Container */}
       <div className="flex items-center justify-center mt-10">
         <div className="flex flex-col items-center w-[95%] md:w-[80%] border border-blue-950 bg-gray-300 rounded-2xl p-6 md:p-10 relative">
-
           {/* Card Slider */}
           <div className="relative w-full flex justify-center items-center">
-
             {/* Prev Button */}
             <button
               onClick={() => setPage((p) => Math.max(p - 1, 0))}
@@ -58,29 +62,117 @@ export default function LanguageCard() {
               p-4 md:p-6 text-2xl md:text-4xl z-10 transition-all duration-300
               ${!hasPrev ? "opacity-40 cursor-not-allowed" : ""}`}
             >
-              ◀
+              ◀️
             </button>
 
-            {/* Card Grid */}
-            <div className="flex  justify-center gap-6 px-12">
-                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
+            <div className="flex justify-center gap-8 flex-wrap">
               {current.map((lang) => (
-                <Link to={lang.ptah}
+                <Link
+                  to={lang.path}
                   key={lang.id}
-                  className="p-4 mx-5 bg-gray-100 rounded-xl w-60 h-80 text-center shadow cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
+                  className="group relative w-64 h-80 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
                 >
-                  <img
-                    src={lang.img}
-                    alt={lang.title}
-                    className="mt-5 w-40 h-40 mx-auto mb-4"
-                  />
-                  <h2 className="text-2xl mt-10 text-blue-900 font-semibold underline decoration-2 decoration-blue-700 underline-offset-4">
-                    {lang.title}
-                  </h2>
+                  {/* Hover Gradient */}
+                  {lang.title === "HTML" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-200 via-orange-400 to-orange-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "CSS" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-200 via-blue-400 to-blue-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "JavaScript" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "React" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-200 via-cyan-400 to-cyan-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "Next.js" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-gray-300 via-gray-600 to-gray-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "Node.js" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-200 via-green-400 to-green-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "Laravel" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-red-200 via-red-500 to-red-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "PHP" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-200 via-indigo-500 to-indigo-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+                  {lang.title === "Vue" && (
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-emerald-200 via-emerald-400 to-emerald-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  )}
+
+                  {/* Card Content */}
+                  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-4">
+                    <div className="bg-white p-4 rounded-full shadow-md mb-4">
+                      <img
+                        src={lang.img}
+                        alt={lang.title}
+                        className="w-24 h-24 object-contain"
+                      />
+                    </div>
+
+                    <h2
+                      className={`text-2xl font-bold ${
+                        lang.title === "HTML"
+                          ? "text-orange-500"
+                          : lang.title === "CSS"
+                          ? "text-blue-500"
+                          : lang.title === "JavaScript"
+                          ? "text-yellow-500"
+                          : lang.title === "React"
+                          ? "text-cyan-500"
+                          : lang.title === "Next.js"
+                          ? "text-gray-800"
+                          : lang.title === "Node.js"
+                          ? "text-green-600"
+                          : lang.title === "Laravel"
+                          ? "text-red-600"
+                          : lang.title === "PHP"
+                          ? "text-indigo-500"
+                          : lang.title === "Vue"
+                          ? "text-emerald-500"
+                          : "text-blue-900"
+                      }`}
+                    >
+                      {lang.title}
+                    </h2>
+
+                    <p className="text-sm text-gray-500 mt-2">
+                      {lang.title === "JavaScript"
+                        ? "Master the language of the web."
+                        : `Learn ${lang.title} essentials.`}
+                    </p>
+
+                    <div className="mt-4">
+                      <button
+                        className={`px-4 py-2 rounded-full text-sm font-medium shadow-md transition-all duration-300 transform hover:scale-110 hover:shadow-lg ${
+                          lang.title === "HTML"
+                            ? "bg-orange-500 hover:bg-orange-600 hover:shadow-orange-400/50 text-white"
+                            : lang.title === "CSS"
+                            ? "bg-blue-500 hover:bg-blue-600 hover:shadow-blue-400/50 text-white"
+                            : lang.title === "JavaScript"
+                            ? "bg-yellow-400 hover:bg-yellow-500 hover:shadow-yellow-300/50 text-gray-900"
+                            : lang.title === "Laravel"
+                            ? "bg-red-600 hover:bg-red-700 hover:shadow-red-500/50 text-white"
+                            : lang.title === "React"
+                            ? "bg-cyan-500 hover:bg-cyan-600 hover:shadow-cyan-400/50 text-white"
+                            : lang.title === "Next.js"
+                            ? "bg-gray-800 hover:bg-gray-900 hover:shadow-gray-400/40 text-white"
+                            : lang.title === "Node.js"
+                            ? "bg-green-600 hover:bg-green-700 hover:shadow-green-400/50 text-white"
+                            : lang.title === "PHP"
+                            ? "bg-indigo-500 hover:bg-indigo-600 hover:shadow-indigo-400/50 text-white"
+                            : lang.title === "Vue"
+                            ? "bg-emerald-500 hover:bg-emerald-600 hover:shadow-emerald-400/50 text-white"
+                            : "bg-blue-600 hover:bg-blue-700 text-white"
+                        }`}
+                      >
+                        Start Learning
+                      </button>
+                    </div>
+                  </div>
                 </Link>
               ))}
-                 </div>
             </div>
 
             {/* Next Button */}
@@ -93,7 +185,7 @@ export default function LanguageCard() {
               p-4 md:p-6 text-2xl md:text-4xl z-10 transition-all duration-300
               ${!hasNext ? "opacity-40 cursor-not-allowed" : ""}`}
             >
-              ▶
+              ▶️
             </button>
           </div>
         </div>
