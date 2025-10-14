@@ -3,15 +3,15 @@ import { useState } from "react";
 import { Link } from "react-router";
 
 const Language = [
-  { id: 1, img: "HTML.png", title: "HTML", path: "/html" },
-  { id: 2, img: "css.svg", title: "CSS", path: "/css" },
-  { id: 3, img: "js.svg", title: "JavaScript", path: "/javascript" },
-  { id: 4, img: "React5.png", title: "React", path: "/react" },
-  { id: 5, img: "nextjs.svg", title: "Next.js", path: "/nextjs" },
-  { id: 6, img: "nodejs.svg", title: "Node.js", path: "/nodejs" },
-  { id: 7, img: "laravel.svg", title: "Laravel", path: "/laravel" },
-  { id: 8, img: "php.svg", title: "PHP", path: "/php" },
-  { id: 9, img: "vue.svg", title: "Vue", path: "/vue" },
+  { id: 1, img: "HTML.png", title: "HTML", path: "/html" , color:"from-orange-200 via-orange-400 to-orange-200" ,h2:"text-orange-500 " , button :"bg-orange-500 hover:bg-orange-600 hover:shadow-orange-400/50 text-white" },
+  { id: 2, img: "css.svg", title: "CSS", path: "/css" , color:" from-blue-200 via-blue-400 to-blue-200", h2:"text-blue-500" },
+  { id: 3, img: "js.svg", title: "JavaScript", path: "/javascript" , color:" from-yellow-200 via-yellow-400 to-yellow-200" , h2:"text-yellow-500" , hover:"bg-yellow-400 hover:bg-yellow-500 hover:shadow-yellow-300/50 text-gray-900" },
+  { id: 4, img: "React5.png", title: "React", path: "/react" , color:" from-cyan-200 via-cyan-400 to-cyan-200", h2:"text-cyan-500" , button:"bg-cyan-500 hover:bg-cyan-600 hover:shadow-cyan-400/50 text-white" },
+  { id: 5, img: "nextjs.svg", title: "Next.js", path: "/nextjs" , color:" from-gray-300 via-gray-600 to-gray-200", h2:"text-gray-800" , button:"bg-gray-800 hover:bg-gray-900 hover:shadow-gray-400/40 text-white" },
+  { id: 6, img: "nodejs.svg", title: "Node.js", path: "/nodejs" , color:" from-green-200 via-green-400 to-green-200" , h2:"text-green-600"  , button:"bg-green-600 hover:bg-green-700 hover:shadow-green-400/50 text-white" },
+  { id: 7, img: "laravel.svg", title: "Laravel", path: "/laravel" , color:" from-red-200 via-red-500 to-red-200" , h2:"text-red-600"  , button:"bg-red-600 hover:bg-red-700 hover:shadow-red-500/50 text-white" },
+  { id: 8, img: "php.svg", title: "PHP", path: "/php" , color:" from-indigo-200 via-indigo-500 to-indigo-200", h2:"text-indigo-500" , button:"bg-indigo-500 hover:bg-indigo-600 hover:shadow-indigo-400/50 text-white" },
+  { id: 9, img: "vue.svg", title: "Vue", path: "/vue" , color:" from-emerald-200 via-emerald-400 to-emerald-200", h2:"text-emerald-500", button:"bg-emerald-500 hover:bg-emerald-600 hover:shadow-emerald-400/50 text-white"  },
 ];
 
 export default function LanguageCard() {
@@ -74,33 +74,8 @@ export default function LanguageCard() {
                   className="group relative w-64 h-80 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
                 >
                   {/* Hover Gradient */}
-                  {lang.title === "HTML" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-orange-200 via-orange-400 to-orange-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "CSS" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-200 via-blue-400 to-blue-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "JavaScript" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "React" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-200 via-cyan-400 to-cyan-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "Next.js" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-gray-300 via-gray-600 to-gray-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "Node.js" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-200 via-green-400 to-green-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "Laravel" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-red-200 via-red-500 to-red-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "PHP" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-200 via-indigo-500 to-indigo-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
-                  {lang.title === "Vue" && (
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-emerald-200 via-emerald-400 to-emerald-200 opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                  )}
+                    <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${lang.color}  opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300`}></div>
+                 
 
                   {/* Card Content */}
                   <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-4">
@@ -113,27 +88,7 @@ export default function LanguageCard() {
                     </div>
 
                     <h2
-                      className={`text-2xl font-bold ${
-                        lang.title === "HTML"
-                          ? "text-orange-500"
-                          : lang.title === "CSS"
-                          ? "text-blue-500"
-                          : lang.title === "JavaScript"
-                          ? "text-yellow-500"
-                          : lang.title === "React"
-                          ? "text-cyan-500"
-                          : lang.title === "Next.js"
-                          ? "text-gray-800"
-                          : lang.title === "Node.js"
-                          ? "text-green-600"
-                          : lang.title === "Laravel"
-                          ? "text-red-600"
-                          : lang.title === "PHP"
-                          ? "text-indigo-500"
-                          : lang.title === "Vue"
-                          ? "text-emerald-500"
-                          : "text-blue-900"
-                      }`}
+                      className={`text-2xl font-bold ${lang.h2}`}
                     >
                       {lang.title}
                     </h2>
@@ -145,7 +100,7 @@ export default function LanguageCard() {
                     </p>
 
                     <div className="mt-4">
-                      <button
+                       <button
                         className={`px-4 py-2 rounded-full text-sm font-medium shadow-md transition-all duration-300 transform hover:scale-110 hover:shadow-lg ${
                           lang.title === "HTML"
                             ? "bg-orange-500 hover:bg-orange-600 hover:shadow-orange-400/50 text-white"

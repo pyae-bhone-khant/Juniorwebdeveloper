@@ -1,4 +1,4 @@
-// src/components/LearningSections.jsx
+
 import React from "react";
 
 export default function Learning() {
