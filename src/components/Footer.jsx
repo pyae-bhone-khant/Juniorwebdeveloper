@@ -14,7 +14,8 @@ export default function Footer() {
                     <h3>Explore your journey and <br /> roadmap with us.</h3>
                     <button>Contact</button>
                 </div>
-                <ul>
+                <div className="social-container">
+                    <ul>
                     <h6>NAVIGATE</h6>  
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">about</Link></li>
@@ -30,6 +31,7 @@ export default function Footer() {
                     <h6>CONTACT</h6>  
                     <li><Link to="/">malsdkfj@outlook.com</Link></li>
                 </ul>
+                </div>
             </div>
             <hr style={{marginTop: "40px", opacity: '.2'}} />
             <div className="copyright">

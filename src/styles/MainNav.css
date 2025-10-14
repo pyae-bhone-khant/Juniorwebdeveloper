@@ -1,6 +1,9 @@
 .main-nav {
     height: 60px;
+    position: sticky;
+    top: 0;
     width: 100%;
+    z-index: 999;
     background-color: rgb(111, 111, 255);
 }
 
@@ -23,6 +26,11 @@ ul {
     color: white;
 }
 
+.link-items {
+    display: flex;
+    align-items: center;
+}
+
 .nav-items {
     color: white;
     font-size: 15px;
@@ -32,4 +40,27 @@ ul {
 
 .nav-items:hover {
     box-shadow: none;
+}
+
+.navButton {
+    background-color: white;
+    margin-left: 15px;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: rgb(111, 111, 255);
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    transition: .4s;
 }

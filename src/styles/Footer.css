@@ -21,6 +21,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    flex: 1;
 }
 
 .footer-para h3 {
@@ -46,6 +47,12 @@ footer {
 footer img {
     width: 290px;
     margin: 25px 0;
+}
+
+footer .social-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
 }
 
 footer ul {
@@ -74,4 +81,48 @@ footer .copyright {
     justify-content: space-between;
     font-size: 13px;
     font-family: "Space Mono", monospace;
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+   .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+   } 
+
+   footer button{
+    margin-top: 20px;
+   }
+
+   .social-container {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-around;
+   }
+}
+
+/* Mobile Size */
+
+@media screen and (max-width: 480px) {
+    .social-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer ul {
+        align-items: flex-start;
+    }
+
+    footer ul h6 {
+        margin-top: 10px ;
+    }
+
+    footer li {
+        margin-top: 10px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        text-align: left;
+    }
 }
