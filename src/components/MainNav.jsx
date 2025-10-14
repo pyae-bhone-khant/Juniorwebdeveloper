@@ -8,7 +8,7 @@ export default function Nav({ isClicked, handleToggle ,width }) {
     <nav className='main-nav'>
         <div className="nav-container">
             <h1 className='logo'>Logo</h1>
-            {width > 480 ? <NavLinks /> 
+            {width > 767 ? <NavLinks /> 
             : <div className='hamburger-menu' onClick={handleToggle}>
                 <div className="line line1" style={{ transform: isClicked ? "rotate(40deg) translateY(8px)" : "translateX(0)" }}></div>
                 <div className="line line2" style={{ opacity: isClicked ? "0" : "1" }}></div>

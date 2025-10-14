@@ -8,6 +8,7 @@ import Missing from './Pages/Missing'
 import { Routes, Route } from 'react-router-dom' 
 import LanguageCard from './components/LanguageCard'
 import Feedback from './components/Feedback'
+import TeamMembers from './Pages/TeamMembers'
 import Footer from './components/Footer'
 import useWindowSize from './hooks/useWindowSize'
 import { useState } from 'react'
@@ -35,6 +36,7 @@ import MobileNav from './components/MobileNav'
         <Route path='/javascript' element= {<Javascript />} />
         <Route path='/php' element= {<PHP />} />
         <Route path='/feedback' element = {<Feedback />} />
+        <Route path='/team' element = {<TeamMembers />} />
         <Route path='*' element= {<Missing />} />
       </Routes>
       <Footer />

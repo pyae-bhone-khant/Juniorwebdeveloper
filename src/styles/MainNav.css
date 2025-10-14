@@ -33,18 +33,35 @@ ul {
 
 .nav-items {
     color: white;
+    position: relative;
     font-size: 15px;
     margin-left: 15px;
-    border: none;
+    padding-bottom: 3px;
 }
 
-.nav-items:hover {
-    box-shadow: none;
+.nav-items::after {
+    content: "";
+    position: absolute;
+    height: 2.8px;
+    width: 0;
+    bottom: -3.8px;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+    transition: .4s;
 }
+
+.nav-items:hover::after {
+    width: 100%;
+}
+
+.nav-items.active::after {
+  width: 100%;
+}
+
 
 .navButton {
     background-color: white;
-    margin-left: 15px;
+    margin-left: 45px;
     padding: 5px 15px;
     font-weight: bold;
     border-radius: 5px;
@@ -63,4 +80,10 @@ ul {
     border-radius: 4px;
     margin-bottom: 4px;
     transition: .4s;
+}
+
+.active {
+    padding-bottom: 5px;
+    opacity: 0.5;
+    border-bottom: 3px solid rgb(255, 255, 255)
 }
