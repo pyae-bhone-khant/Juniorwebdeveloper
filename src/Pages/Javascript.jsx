@@ -182,7 +182,7 @@ const Javascript = () => {
                  <div className="w-95 mt-20"> 
     <div className="bg-yellow-500 px-25 py-2 text-black font-bold text-2xl">About Us</div> 
     <div>
-        <img className="w-full h-85 mt-4"  src='jsbook1.png' alt="Team Image" /> 
+        <img className="w-full h-85 mt-4"  src='js6.png' alt="Team Image" /> 
         <h1 className="mt-4 text-xl text-yellow-500 font-semibold">Welcome to Our Team!</h1>
         <p className="mt-2 text-white">
             If you have any questions or don’t understand something, feel free to reach out to our team. 
