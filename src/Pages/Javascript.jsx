@@ -1,11 +1,12 @@
 import React from "react";
-import Js1 from "/public/Javascriptphoto/Js1.png";
-import jsbook1 from "/public/Javascriptphoto/jsbook1.png";
-import JS2 from "/public/Javascriptphoto/JS2.png";
-import JS3 from "/public/Javascriptphoto/JS3.png";
-import JS4 from "/public/Javascriptphoto/JS4.png";
-import JS5 from "/public/Javascriptphoto/JS5.png";
-import Js6 from "/public/Javascriptphoto/Js6.png";
+import Js1 from "../assets/Javascriptphoto/Js1.png";
+import jsbook1 from "../assets/Javascriptphoto/jsbook1.png";
+import JS2 from "../assets/Javascriptphoto/JS2.png";
+import JS3 from "../assets/Javascriptphoto/JS3.png";
+import JS4 from "../assets/Javascriptphoto/JS4.png";
+import JS5 from "../assets/Javascriptphoto/JS5.png";
+import Js6 from "../assets/Javascriptphoto/Js6.png";
+
 
 
 
