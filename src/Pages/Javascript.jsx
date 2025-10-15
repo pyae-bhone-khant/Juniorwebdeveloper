@@ -8,7 +8,7 @@ import React from "react";
 // import Js6 from "/public/Js6.png";
 const Javascript = () => {
   return ( 
-     <div className="min-h-screen mb-0 flex flex-col sm:p-6 md:p-0 bg-gradient-to-b from-gray-800 to-gray-700 text-gray-100 " > 
+     <div className="min-h-screen mb-0 flex flex-col  bg-gradient-to-b from-gray-800 to-gray-700 text-gray-100 " > 
 
     <div className=" flex flex-col items-center  text-gray-100 p-6">
       <div className="w-full  bg-gray-800 rounded-2xl shadow-lg p-8 space-y-6 border border-gray-700">
@@ -92,7 +92,7 @@ const Javascript = () => {
     <div className="border  w-360 border-yellow-100"></div>
     
        {/* learning course  */} 
-       <div className="mt-8 mb-8 items-center text-center justify-center  " > 
+       <div className="mt-8 mb-8 px-6 items-center text-center justify-center  " > 
         <div  className="flex  flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-45 " >
           
             {/* Youtube course  */}
