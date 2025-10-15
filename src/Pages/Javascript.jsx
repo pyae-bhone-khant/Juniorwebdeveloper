@@ -1,11 +1,5 @@
 import React from "react";
-import Js1 from "../assets/Javascriptphoto/Js1.png";
-import jsbook1 from "../assets/Javascriptphoto/jsbook1.png";
-import JS2 from "../assets/Javascriptphoto/JS2.png";
-import JS3 from "../assets/Javascriptphoto/JS3.png";
-import JS4 from "../assets/Javascriptphoto/JS4.png";
-import JS5 from "../assets/Javascriptphoto/JS5.png";
-import Js6 from "../assets/Javascriptphoto/Js6.png";
+
 
 
 
@@ -107,7 +101,7 @@ const Javascript = () => {
            <div className="mt-3" >
 
         <div className=" cursor-pointer  flex w-100 md:w-155 flex-col items-center" >
-          <img src={Js1} className="rounded md:w-155" alt="" />
+          <img src="public/assets/Javascriptphoto/Js1.png" className="rounded md:w-155" alt="" />
           <h1 className="text-yellow-500 text-xl md:text-2xl font-bold mt-2" > Start Learning </h1>
           <p className="mt-2 text-sm md:text-xl text-gray-200"> <span className="text-yellow-500">Created Coder</span> ကနေ JavaScript ကို မြန်မာလို လေ့လာရမှာ ဖြစ်ပါတယ်။</p>
           <h2 className="mt-2">ဘာတွေပါမလဲ?</h2>
@@ -115,28 +109,28 @@ const Javascript = () => {
         </div>    
             <div className=" mt-10 w-100 md:w-155 gap-6 grid grid-cols-1 md:grid-cols-2" >
               <a href="https://youtu.be/EerdGm-ehJQ?si=EoMw166U-7W3uLXG">
-                      <img className=" w-full h-auto rounded" src={JS2} alt="" />
+                      <img className=" w-full h-auto rounded" src="public/assets/Javascriptphoto/Js1.png" alt="" />
                       <h1 className="text-yellow-500 text-xl  font-bold mt-2">Start Learning with course</h1>
                       <p className="mt-2 text-sm  text-gray-200">  Learn JavaScript in English from <span className="text-yellow-500">SurperSimpleDev</span>. </p>
                       <h2 className="mt-2">What’s Included?</h2>
                       <p  className="mt-2  space-y-2 text-sm ">This course covers the fundamentals of JavaScript, including Variables, Functions, and DOM Manipulation, explained in a practical and easy-to-understand way.</p>
               </a>   
                <a href="https://youtu.be/lfmg-EJ8gm4?si=kfFQevTj9Qtibirt">
-                      <img className="w-full h-auto rounded" src={JS3} alt="" />
+                      <img className="w-full h-auto rounded" src="public/assets/Javascriptphoto/Js1.png" alt="" />
                       <h1 className="text-yellow-500 text-xl  font-bold mt-2">Start Learning with course</h1>
                       <p className="mt-2 text-sm  text-gray-200">  Learn JavaScript in English from <span className="text-yellow-500">Bro Code</span>. </p>
                       <h2 className="mt-2">What’s Included?</h2>
                       <p  className="mt-2  space-y-2 text-sm ">This course covers the fundamentals of JavaScript, including Variables, Functions, and DOM Manipulation, explained in a practical and easy-to-understand way.</p>
               </a>  
                <a href="https://youtu.be/ukiGFmZ32YA?si=wF8R-eKnJgfLUqI1">
-                      <img className="w-full h-auto rounded" src={JS4} alt="" />
+                      <img className="w-full h-auto rounded"  src="public/assets/Javascriptphoto/Js1.png" alt="" />
                       <h1 className="text-yellow-500 text-xl  font-bold mt-2">Start Learning with Projects</h1>
                       <p className="mt-2 text-sm  text-gray-200">  Learn JavaScript in English from <span className="text-yellow-500">JavaScript Mastery</span>. </p>
                       <h2 className="mt-2">What’s Included?</h2>
                       <p  className="mt-2  space-y-2 text-sm ">This course covers the fundamentals of JavaScript, including Variables, Functions, and DOM Manipulation, explained in a practical and easy-to-understand way.</p>
               </a>  
                <a href="https://youtu.be/LX8_z1nvqk4?si=GebnKDA6AyxS9oKr">
-                      <img className="w-full h-auto rounded" src={JS5} alt="" />
+                      <img className="w-full h-auto rounded" src="public/assets/Javascriptphoto/Js1.png" alt="" />
                       <h1 className="text-yellow-500 text-xl  font-bold mt-2">Start Learning with Projects </h1>
                       <p className="mt-2 text-sm  text-gray-200">  Learn JavaScript in English from <span className="text-yellow-500">Code Traversal</span>. </p>
                       <h2 className="mt-2">What’s Included?</h2>
@@ -154,7 +148,7 @@ const Javascript = () => {
               <div className=" bg-yellow-500 px-25 py-2 text-black font-bold text-2xl" >Populor Books</div> 
                 <div className="flex flex-col mt-3 ">
                 <div className= " cursor-pointer mt-2 flex gap-3">
-                  <img className="w-30 h-30" src={jsbook1} alt="" />
+                  <img className="w-30 h-30" src="public/assets/Javascriptphoto/Js1.png" alt="" />
                   <p> JavaScript လိုတိုရှင်း <br />
                       by  <span className="text-yellow-500" >Sir Ei Maung</span> <br />
                     A practical guide for beginners to intermediate </p>
@@ -165,7 +159,7 @@ const Javascript = () => {
                    <div className="border-yellow-100 border   w-70 mt-2  "></div>
                 </div>
                  <div className=" cursor-pointer mt-2 flex gap-3">
-                  <img className="w-30 h-30" src={jsbook1} alt="" />
+                  <img className="w-30 h-30" src="public/assets/Javascriptphoto/Js1.png" alt="" />
                   <p> JavaScript လိုတိုရှင်း <br />
                       by   <span className="text-yellow-500" >Sir Ei Maung</span> <br />
                     A practical guide for beginners to intermediate </p>
@@ -175,7 +169,7 @@ const Javascript = () => {
                    <div className="border-yellow-100 border   w-70 mt-2  "></div>
                 </div>
                 <div className=" cursor-pointer mt-2 flex gap-3">
-                  <img className="w-30 h-30" src={jsbook1} alt="" />
+                  <img className="w-30 h-30" src="public/assets/Javascriptphoto/Js1.png" alt="" />
                   <p> JavaScript လိုတိုရှင်း <br  />
                       by <span className="text-yellow-500" >Sir Ei Maung</span>   <br />
                     A practical guide for beginners to intermediate </p>
@@ -190,7 +184,7 @@ const Javascript = () => {
                  <div className="w-95 mt-20"> 
     <div className="bg-yellow-500 px-25 py-2 text-black font-bold text-2xl">About Us</div> 
     <div>
-        <img className="w-full h-85 mt-4" src={Js6} alt="Team Image" /> 
+        <img className="w-full h-85 mt-4" src="public/assets/Javascriptphoto/Js1.png" alt="Team Image" /> 
         <h1 className="mt-4 text-xl text-yellow-500 font-semibold">Welcome to Our Team!</h1>
         <p className="mt-2 text-white">
             If you have any questions or don’t understand something, feel free to reach out to our team. 
