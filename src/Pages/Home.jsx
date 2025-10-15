@@ -6,7 +6,7 @@ import ContactSection from '../components/Cta';
 export default function Home() {
   return ( 
      <div> 
-    <div  className='flex flex-col lg:flex-row md:flex-row items-center justify-center  md:justify-between w-full h-full md:h-120 mb-0  bg-blue-950' >
+    <div  className='flex flex-col lg:flex-row md:flex-row items-center justify-center  md:justify-between w-full h-full md:h-120 mb-0  bg-blue-800' >
    <div className='text-white flex flex-col px-8 md:px-20 mt-15  md:mt-18 ' >
     <h1 className=' text-2xl md:text-4xl font-bold' >Become a full stack Developer</h1>
     <p className='mt-8  text-xl md:text-xl' >Learn web development step-by-step with our free YouTube course and complete guidebook. Perfect for beginners who want to start coding confidently.</p>
